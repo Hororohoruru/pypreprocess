@@ -24,7 +24,7 @@ jobs:
           name: Installing SPM & exporting its paths + other path
           command: |
             source continuous_integration/setup_spm.sh
-            echo 'export SPM_ROOT_DIR="$HOME/opt/spm12"' >> $BASH_ENV
+            echo 'export SPM_ROOT_DIR="root/opt/spm12"' >> $BASH_ENV
             echo 'export SPM_DIR="$SPM_ROOT_DIR/spm12/"' >> $BASH_ENV
             echo 'export SPM_MCR="$SPM_ROOT_DIR/spm12.sh"' >> $BASH_ENV
             echo 'export PATH="/home/circleci/.local/bin:$PATH"' >> $BASH_ENV
